@@ -37,6 +37,7 @@ $('.decrement').click(function(){
 
 $('.start-btn').click(function(){
     $('.clock').empty();
+    time = $('.time-input').val();
     clock = new FlipClock($('.clock'), time*60, {
         autoStart: false,
         countdown: true,
