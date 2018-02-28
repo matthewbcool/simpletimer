@@ -25,8 +25,13 @@ $('.increment').click(function(){
 });
 
 $('.decrement').click(function(){
-    time -= 1;
-    $('.time-input').val(time);
+    if (time === 0) {
+        time = 0;
+        $('.time-input').val(time);
+    } else {
+        time -= 1;
+        $('.time-input').val(time);
+    }
 });
 
 
@@ -47,6 +52,7 @@ $('.start-btn').click(function(){
 
 
 $('.reset-btn').click(function() {
+    // reset fails to clearInterval...  have to find a way
     $('.clock').empty();
     clock = new FlipClock($('.clock'), 1500, {
         autoStart: false,
