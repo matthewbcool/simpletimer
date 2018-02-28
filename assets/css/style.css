@@ -12,13 +12,19 @@
     width: 36px;
     border-radius: 15px;
     margin: 10px 10px 10px 10px;
-<<<<<<< HEAD
     box-shadow: 3px 3px grey;
-=======
->>>>>>> 221ee45af250b179450e357a18f3490728322549
 }
-button { 
+.operators:hover {
+  background-color: dimgray;
+}
 
+button { 
+ font-family: 'Oxygen', sans-serif;
+ font-size: 25px;
+ margin-top: 10px; 
+}
+button:hover {
+    background-color: dimgrey;
 }
 
 .time-input {
@@ -26,3 +32,21 @@ button {
     font-size: 30px;
     width: 25%;
 }
+h1 {
+  font-size: 48px;
+  margin-left: 15px;
+}
+h1,
+h2 {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
